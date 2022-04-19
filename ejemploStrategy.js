@@ -1,14 +1,8 @@
-// Transport is a class of object that can greet people.
-// It can learn different ways of greeting people through
-// 'Strategies.'
-//
 // This is the Transport constructor.
 var Transport = function (strategy) {
     this.strategy = strategy;
 };
-
-// Transport provides a greet function that is going to
-// greet people using the Strategy passed to the constructor.
+// transport people using the Strategy passed to the constructor.
 Transport.prototype.transporter = function () {
     return this.strategy();
 };
